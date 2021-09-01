@@ -9,6 +9,10 @@ const addNote = (title, body) => {
     const notes = loadNotes()
     const duplicateNote = notes.find((note) => note.title === title)
 
+    debugger
+    // node inspect  app.js add --title="Courses" --body="Node Js"
+    // chrome://inspect/#devices
+
     if (!duplicateNote) {
         notes.push({
             title: title,
